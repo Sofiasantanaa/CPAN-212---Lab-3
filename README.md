@@ -29,14 +29,14 @@ The application is implemented using modern JavaScript (ES Modules), Express, an
 
 ## Key Features
 
-Persistent file-based JSON storage
+- Persistent file-based JSON storage
 
-Full CRUD operations for incidents
+- Full CRUD operations for incidents
 
-Business rule enforcement for status transitions
+- Business rule enforcement for status transitions
 
-Dashboard with real-time KPIs
+- Dashboard with real-time KPIs
 
-Bulk CSV upload with validation
+- Bulk CSV upload with validation
 
-Modular backend and reusable frontend components
+- Modular backend and reusable frontend components
