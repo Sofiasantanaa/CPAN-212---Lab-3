@@ -1,0 +1,56 @@
+[
+  {
+    "id": "81cda312-ef4b-4562-af38-aa841f44a001",
+    "title": "Network Outage",
+    "description": "Main office network is down affecting all employees",
+    "category": "IT",
+    "severity": "HIGH",
+    "status": "RESOLVED",
+    "reportedAt": "2026-02-19T04:35:00.542Z"
+  },
+  {
+    "id": "635af5bb-df23-49e3-9f3c-9b11f2dc4400",
+    "title": "Lost Employee Badge",
+    "description": "An employee reported losing their ID badge in the building. Security needs to deactivate it",
+    "category": "OTHER",
+    "severity": "MEDIUM",
+    "status": "OPEN",
+    "reportedAt": "2026-02-19T04:44:44.253Z"
+  },
+  {
+    "id": "03bca263-fcc8-481a-a28c-764f2cc006ff",
+    "title": "Network Outage",
+    "description": "Main office network down affecting all employees",
+    "category": "IT",
+    "severity": "HIGH",
+    "status": "OPEN",
+    "reportedAt": "2026-02-19T04:53:38.654Z"
+  },
+  {
+    "id": "c15c4f58-62b3-464e-82eb-f40690361427",
+    "title": "Fire Drill",
+    "description": "Fire drill scheduled for main building",
+    "category": "SAFETY",
+    "severity": "MEDIUM",
+    "status": "OPEN",
+    "reportedAt": "2026-02-19T04:53:38.655Z"
+  },
+  {
+    "id": "71a4b45a-9ce6-46ad-afe7-a014d86048f6",
+    "title": "Broken Chair",
+    "description": "Office chair in room 101 is broken",
+    "category": "FACILITIES",
+    "severity": "LOW",
+    "status": "OPEN",
+    "reportedAt": "2026-02-19T04:53:38.655Z"
+  },
+  {
+    "id": "c36b469b-3cce-4f84-86b5-e71b6572e26b",
+    "title": "Invalid Incident",
+    "description": "Too short",
+    "category": "OTHER",
+    "severity": "HIGH",
+    "status": "OPEN",
+    "reportedAt": "2026-02-19T04:53:38.655Z"
+  }
+]

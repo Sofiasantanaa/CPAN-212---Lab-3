@@ -5,8 +5,12 @@ export function validateCreateIncident(data) {
     return { ok: false, error: "All fields are required" };
   }
 
-  return { ok: true };
+  return {
+    ok: true,
+    value: { title, description, category, severity } 
+  };
 }
+
 
 export function validateStatusChange(current, next) {
   const transitions = {
@@ -22,4 +26,6 @@ export function validateStatusChange(current, next) {
 
   return { ok: true, next };
 }
+
+
 

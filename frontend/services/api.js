@@ -6,9 +6,7 @@ async function handleJson(res) {
   const body = isJson ? await res.json() : null;
 
   if (!res.ok) {
-    const message =
-      (body && (body.error || body.message)) ||
-      `Request failed with status ${res.status}`;
+    const message = (body && (body.error || body.message)) || `Request failed with status ${res.status}`;
     const details = body && body.details ? body.details : null;
     const err = new Error(message);
     err.status = res.status;
@@ -17,11 +15,6 @@ async function handleJson(res) {
   }
 
   return body;
-}
-
-export async function health() {
-  const res = await fetch(`${BASE}/health`);
-  return handleJson(res);
 }
 
 export async function listIncidents(showArchived = false) {
@@ -63,3 +56,4 @@ export async function bulkUploadCsv(file) {
 
   return handleJson(res);
 }
+
