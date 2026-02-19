@@ -1,9 +1,7 @@
 ## IncidentTracker Web Application
 ## Project Overview
 
-The IncidentTracker Web Application is a Node.js and Next.js-based system designed to manage the reporting, tracking, and archiving of incidents within an organization.
-
-The main objective of the application is to replace informal incident tracking (such as spreadsheets or emails) with a structured system that enforces incident lifecycle rules and controlled status transitions.
+The IncidentTracker Web Application is a Node.js and Next.js-based system for reporting, tracking, and archiving incidents within an organization. It replaces informal tracking methods like spreadsheets or emails with a structured system that enforces incident lifecycle rules and controlled status transitions. 
 
 # The system supports:
 
@@ -26,17 +24,15 @@ The application is implemented using modern JavaScript (ES Modules), Express, an
 
 - Node.js version 18 or higher
 - Git (optional, for version control)
+- Clone the repository
+- Install dependencies using npm install
+- Start the backend with npm run start:backend
+- Start the frontend with npm run dev
+- Open your browser at http://localhost:3000 to use the app
+- ## NOTE: No additional configuration is required
+  
+## API Endpoints 
+The system provides REST endpoints for full CRUD operations, status updates, and bulk CSV import. Main endpoints include: GET /api/incidents to retrieve all incidents, POST /api/incidents to create a new incident, PUT /api/incidents/:id to update an incident, DELETE /api/incidents/:id to delete an incident, and POST /api/incidents/upload for CSV import
 
-## Key Features
-
-- Persistent file-based JSON storage
-
-- Full CRUD operations for incidents
-
-- Business rule enforcement for status transitions
-
-- Dashboard with real-time KPIs
-
-- Bulk CSV upload with validation
-
-- Modular backend and reusable frontend components
+## CSV Format 
+CSV files for bulk upload must include columns: title,description,category,severity,status
