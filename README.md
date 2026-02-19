@@ -24,15 +24,42 @@ The application is implemented using modern JavaScript (ES Modules), Express, an
 
 - Node.js version 18 or higher
 - Git (optional, for version control)
-- Clone the repository
-- Install dependencies using npm install
-- Start the backend with npm run start:backend
-- Start the frontend with npm run dev
-- Open your browser at http://localhost:3000 to use the app
-- ## NOTE: No additional configuration is required
-  
+
+## Installation 
+1. Clone the repository:
+
+git clone <your-repo-url>
+cd incidenttracker
+
+2. Install backend dependencies:
+cd backend
+npm install
+
+3. Install frontend dependencies:
+
+cd ../frontend
+npm install
+
+## Running the application 
+- Start the backend server:
+
+cd backend
+npm start
+
+- Start the frontend:
+
+cd frontend
+npm run dev
+Open the app in your browser at: http://localhost:3000
+
 ## API Endpoints 
-The system provides REST endpoints for full CRUD operations, status updates, and bulk CSV import. Main endpoints include: GET /api/incidents to retrieve all incidents, POST /api/incidents to create a new incident, PUT /api/incidents/:id to update an incident, DELETE /api/incidents/:id to delete an incident, and POST /api/incidents/upload for CSV import
+Method	Endpoint	Description
+GET	/health	Returns { status: "ok" }
+GET	/api/incidents	Retrieves all incidents
+GET	/api/incidents/:id	Retrieves a specific incident by ID
+POST	/api/incidents	Creates a new incident
+PATCH	/api/incidents/:id/status	Updates the status of an incident
+POST	/api/incidents/bulk-upload	Upload multiple incidents via CSV
 
 ## CSV Format 
 CSV files for bulk upload must include columns: title,description,category,severity,status
